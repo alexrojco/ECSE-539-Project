@@ -5,13 +5,11 @@ package Sample.model;
 import javax.swing.JFrame;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.DocumentEvent;
-import javax.swing.JTextField;
 import java.util.random.RandomGenerator;
 import javax.swing.Timer;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.GridLayout;
-import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 
 public class xPHHP extends JFrame {
@@ -32,11 +30,9 @@ public class xPHHP extends JFrame {
     }
   };
 
-  private JTextField inputField_a = new JTextField();
-  private JTextField inputField_b = new JTextField();
 
-  private JTextField outputField_a = new JTextField();
-  private JTextField outputField_b = new JTextField();
+
+
 
   private RandomGenerator rand = RandomGenerator.of("Random");
   private int delay = 1000;
@@ -62,17 +58,8 @@ public class xPHHP extends JFrame {
 
   public xPHHP() {
     setTitle("xPHHP");
-    setLayout(new GridLayout(0, 2));
-    inputField_a.getDocument().addDocumentListener(listener);
-    add(new JLabel("Glucose"));
-    add(inputField_a);
-    inputField_b.getDocument().addDocumentListener(listener);
-    add(new JLabel("Temp"));
-    add(inputField_b);
-    add(new JLabel("Output"));
-    add(outputField_a);
-    add(new JLabel("Output"));
-    add(outputField_b);
+    setLayout(new GridLayout(10, 2));
+
 
     update();
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -86,15 +73,9 @@ public class xPHHP extends JFrame {
   }
 
   public void update() {
-    int i_a = 0;
-    int i_b = 0;
     try {
-      i_a = rand.nextInt(Integer.parseInt(inputField_a.getText()) * 3);
-      i_b = rand.nextInt(Integer.parseInt(inputField_b.getText()) * 3);
     } catch (NumberFormatException e) {
     }
-    outputField_a.setText("" + (i_a));
-    outputField_b.setText("" + (i_b));
   }
 
   public static void main(String[] args) {

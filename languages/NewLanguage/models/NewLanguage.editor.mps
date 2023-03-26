@@ -20,6 +20,7 @@
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -58,12 +59,50 @@
       <node concept="3F0ifn" id="5pHn3TdH3t4" role="3EZMnx">
         <property role="3F0ifm" value="PHHP" />
       </node>
+      <node concept="3F0ifn" id="ENFp$lkXLX" role="3EZMnx">
+        <property role="3F0ifm" value="named" />
+      </node>
       <node concept="3F0A7n" id="5pHn3TdGM5F" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="lj46D" id="5pHn3TdH5Bj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="ljvvj" id="5pHn3TdH6fz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$lkDRO" role="3EZMnx">
+        <node concept="ljvvj" id="ENFp$lkE1a" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="ENFp$lg2wD" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lg2Rb" resolve="measurement" />
+        <node concept="l2Vlx" id="ENFp$lg2wG" role="2czzBx" />
+        <node concept="ljvvj" id="ENFp$lg3_K" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="ENFp$lg3Lc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$lg41$" role="3EZMnx">
+        <node concept="ljvvj" id="ENFp$lg4a4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="ENFp$lfAug" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$leSYP" resolve="action" />
+        <node concept="l2Vlx" id="ENFp$lfAui" role="2czzBx" />
+        <node concept="ljvvj" id="ENFp$lfAE2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="ENFp$lhJti" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$lfA2v" role="3EZMnx">
+        <node concept="ljvvj" id="ENFp$lfA5Q" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -108,6 +147,9 @@
         <property role="3F0ifm" value="output" />
       </node>
       <node concept="l2Vlx" id="5pHn3TdH9fO" role="2iSdaV" />
+      <node concept="3F0A7n" id="ENFp$ldfKO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
       <node concept="3F1sOY" id="5pHn3TdHcJ$" role="3EZMnx">
         <ref role="1NtTu8" to="4c12:5pHn3TdHe1O" resolve="expression" />
       </node>
@@ -123,6 +165,116 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="ENFp$lehn8">
+    <ref role="1XX52x" to="4c12:ENFp$legVC" resolve="Action" />
+    <node concept="3EZMnI" id="ENFp$lehq0" role="2wV5jI">
+      <node concept="3F0ifn" id="ENFp$lehy4" role="3EZMnx">
+        <property role="3F0ifm" value="action" />
+        <node concept="pVoyu" id="ENFp$lhIqp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="ENFp$lehXk" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="ENFp$lhnRe" role="3EZMnx">
+        <property role="3F0ifm" value="adds" />
+        <node concept="ljvvj" id="ENFp$lhoon" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="ENFp$lg7O8" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lg6YC" resolve="measurements" />
+        <node concept="l2Vlx" id="ENFp$lg7Oa" role="2czzBx" />
+        <node concept="pj6Ft" id="ENFp$lg7U4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="ENFp$lhpRo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="ENFp$lhpVB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="ENFp$lhq6n" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="ENFp$lehq3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="ENFp$lfXIN">
+    <ref role="1XX52x" to="4c12:ENFp$lfXsf" resolve="Measurement" />
+    <node concept="3EZMnI" id="ENFp$lfXK_" role="2wV5jI">
+      <node concept="3F0ifn" id="ENFp$lfY3s" role="3EZMnx">
+        <property role="3F0ifm" value="measurement" />
+      </node>
+      <node concept="3F0A7n" id="ENFp$lfYbo" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="ENFp$ljm2O" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="ENFp$lfXKC" role="2iSdaV" />
+      <node concept="3F0ifn" id="ENFp$lj0nG" role="3EZMnx">
+        <property role="3F0ifm" value="min value:" />
+        <node concept="lj46D" id="ENFp$ljmSz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="ENFp$ljlPG" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$liZvg" resolve="min" />
+        <node concept="lj46D" id="ENFp$ljmmc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$ljmHa" role="3EZMnx" />
+      <node concept="3F0ifn" id="ENFp$lj0JQ" role="3EZMnx">
+        <property role="3F0ifm" value="max value" />
+      </node>
+      <node concept="3F0A7n" id="ENFp$lj0X2" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lj00y" resolve="max" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="ENFp$lfZHz">
+    <ref role="1XX52x" to="4c12:ENFp$lfYd3" resolve="MeasurementReference" />
+    <node concept="3EZMnI" id="ENFp$lgxtD" role="2wV5jI">
+      <node concept="3F1sOY" id="ENFp$lhoMY" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lg8pu" resolve="expression" />
+      </node>
+      <node concept="3F0ifn" id="ENFp$lhoRz" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="1iCGBv" id="ENFp$lgxxA" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lfZ8M" resolve="measurement" />
+        <node concept="lj46D" id="ENFp$lgxxC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="1sVBvm" id="ENFp$lgxxD" role="1sWHZn">
+          <node concept="3F0A7n" id="ENFp$lh1hd" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="ENFp$lgxtG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="ENFp$lkY52">
+    <ref role="1XX52x" to="4c12:ENFp$lkXYF" resolve="LogEntry" />
+    <node concept="3EZMnI" id="ENFp$ll9Ui" role="2wV5jI">
+      <node concept="3F0ifn" id="ENFp$llanU" role="3EZMnx">
+        <property role="3F0ifm" value="sends" />
+      </node>
+      <node concept="3F0A7n" id="ENFp$lla13" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lkYgq" resolve="message" />
+      </node>
+      <node concept="3F0ifn" id="ENFp$llaJh" role="3EZMnx">
+        <property role="3F0ifm" value="when" />
+      </node>
+      <node concept="l2Vlx" id="ENFp$ll9Ul" role="2iSdaV" />
     </node>
   </node>
 </model>

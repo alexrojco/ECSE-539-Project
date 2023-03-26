@@ -9,16 +9,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Action;
   private ConceptPresentation props_InputField;
   private ConceptPresentation props_InputFieldReference;
+  private ConceptPresentation props_LogEntry;
+  private ConceptPresentation props_Logger;
+  private ConceptPresentation props_Measurement;
+  private ConceptPresentation props_MeasurementReference;
   private ConceptPresentation props_OutputField;
   private ConceptPresentation props_PHHP;
+  private ConceptPresentation props_TriggerRule;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Action:
+        if (props_Action == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Action = cpb.create();
+        }
+        return props_Action;
       case LanguageConceptSwitch.InputField:
         if (props_InputField == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -33,10 +46,38 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_InputFieldReference = cpb.create();
         }
         return props_InputFieldReference;
+      case LanguageConceptSwitch.LogEntry:
+        if (props_LogEntry == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LogEntry");
+          props_LogEntry = cpb.create();
+        }
+        return props_LogEntry;
+      case LanguageConceptSwitch.Logger:
+        if (props_Logger == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Logger");
+          props_Logger = cpb.create();
+        }
+        return props_Logger;
+      case LanguageConceptSwitch.Measurement:
+        if (props_Measurement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Measurement = cpb.create();
+        }
+        return props_Measurement;
+      case LanguageConceptSwitch.MeasurementReference:
+        if (props_MeasurementReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99153fe343L, 0xab3ad99153ff232L, "measurement", "", "");
+          props_MeasurementReference = cpb.create();
+        }
+        return props_MeasurementReference;
       case LanguageConceptSwitch.OutputField:
         if (props_OutputField == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("OutputField");
+          cpb.presentationByName();
           props_OutputField = cpb.create();
         }
         return props_OutputField;
@@ -47,6 +88,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PHHP = cpb.create();
         }
         return props_PHHP;
+      case LanguageConceptSwitch.TriggerRule:
+        if (props_TriggerRule == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TriggerRule");
+          props_TriggerRule = cpb.create();
+        }
+        return props_TriggerRule;
     }
     return null;
   }

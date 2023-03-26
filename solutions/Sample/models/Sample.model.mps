@@ -12,17 +12,26 @@
     <import index="h2sj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.random(JDK/)" />
   </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+    </language>
     <language id="16a79f2d-7a8d-4f36-ae28-276960b9e667" name="NewLanguage">
-      <concept id="6227735282384710022" name="NewLanguage.structure.InputFieldReference" flags="ng" index="rQ7mS">
-        <reference id="6227735282384711403" name="field" index="rQ7bl" />
-      </concept>
-      <concept id="6227735282384651722" name="NewLanguage.structure.InputField" flags="ng" index="rQhBO" />
-      <concept id="6227735282384670920" name="NewLanguage.structure.OutputField" flags="ng" index="rQsNQ">
-        <child id="6227735282384691316" name="expression" index="rQrLa" />
-      </concept>
       <concept id="6227735282384468810" name="NewLanguage.structure.PHHP" flags="ng" index="rR2tO">
-        <child id="6227735282384653932" name="inputField" index="rQh9i" />
-        <child id="6227735282384672314" name="outputField" index="rQsC4" />
+        <child id="771150834208313269" name="action" index="vy28G" />
+        <child id="771150834208615883" name="measurement" index="vWS1i" />
+      </concept>
+      <concept id="771150834208149224" name="NewLanguage.structure.Action" flags="ng" index="vyEdL">
+        <child id="771150834208632744" name="measurements" index="vWW8L" />
+      </concept>
+      <concept id="771150834208596803" name="NewLanguage.structure.MeasurementReference" flags="ng" index="vz4Vq">
+        <reference id="771150834208600626" name="measurement" index="vz5YF" />
+        <child id="771150834208638558" name="expression" index="vWMJ7" />
+      </concept>
+      <concept id="771150834208593679" name="NewLanguage.structure.Measurement" flags="ng" index="vz7Em">
+        <property id="771150834209388496" name="min" index="vY5D9" />
+        <property id="771150834209390626" name="max" index="vZUQV" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -33,21 +42,38 @@
   </registry>
   <node concept="rR2tO" id="5pHn3TdH3o_">
     <property role="TrG5h" value="xPHHP" />
-    <node concept="rQhBO" id="5pHn3TdH92Z" role="rQh9i">
+    <node concept="vyEdL" id="ENFp$liY8I" role="vy28G">
+      <property role="TrG5h" value="Eat" />
+      <node concept="vz4Vq" id="ENFp$liYdF" role="vWW8L">
+        <ref role="vz5YF" node="ENFp$liY4U" resolve="Glucose" />
+        <node concept="3cmrfG" id="ENFp$liY_T" role="vWMJ7">
+          <property role="3cmrfH" value="25" />
+        </node>
+      </node>
+    </node>
+    <node concept="vyEdL" id="ENFp$liYNl" role="vy28G">
+      <property role="TrG5h" value="Drink" />
+      <node concept="vz4Vq" id="ENFp$liYSy" role="vWW8L">
+        <ref role="vz5YF" node="ENFp$liYTF" resolve="Hydration" />
+        <node concept="3cmrfG" id="ENFp$liZ2n" role="vWMJ7">
+          <property role="3cmrfH" value="50" />
+        </node>
+      </node>
+    </node>
+    <node concept="vz7Em" id="ENFp$liY4U" role="vWS1i">
       <property role="TrG5h" value="Glucose" />
+      <property role="vY5D9" value="1" />
+      <property role="vZUQV" value="3" />
     </node>
-    <node concept="rQhBO" id="5pHn3TdH931" role="rQh9i">
-      <property role="TrG5h" value="Temp" />
+    <node concept="vz7Em" id="ENFp$liYTF" role="vWS1i">
+      <property role="TrG5h" value="Hydration" />
+      <property role="vZUQV" value="1" />
+      <property role="vY5D9" value="1" />
     </node>
-    <node concept="rQsNQ" id="ENFp$kYV9x" role="rQsC4">
-      <node concept="rQ7mS" id="ENFp$kYVcE" role="rQrLa">
-        <ref role="rQ7bl" node="5pHn3TdH92Z" resolve="Glucose" />
-      </node>
-    </node>
-    <node concept="rQsNQ" id="ENFp$kZIQd" role="rQsC4">
-      <node concept="rQ7mS" id="ENFp$kZISW" role="rQrLa">
-        <ref role="rQ7bl" node="5pHn3TdH931" resolve="Temp" />
-      </node>
+    <node concept="vz7Em" id="ENFp$liZdf" role="vWS1i">
+      <property role="TrG5h" value="Temp " />
+      <property role="vZUQV" value="1" />
+      <property role="vY5D9" value="2" />
     </node>
   </node>
 </model>

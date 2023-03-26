@@ -254,7 +254,7 @@
       <ref role="3lhOvi" node="5pHn3TdHv9j" resolve="PHHPImpl" />
     </node>
     <node concept="2rT7sh" id="5pHn3TdLaUr" role="2rTMjI">
-      <property role="TrG5h" value="InputeFieldDeclaration" />
+      <property role="TrG5h" value="InputFieldDeclaration" />
       <ref role="2rTdP9" to="4c12:5pHn3TdH4na" resolve="InputField" />
       <ref role="2rZz_L" to="tpee:fz12cDC" resolve="FieldDeclaration" />
     </node>
@@ -407,6 +407,8 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="ENFp$leICO" role="jymVt" />
+    <node concept="2tJIrI" id="ENFp$leKps" role="jymVt" />
     <node concept="2tJIrI" id="5pHn3TdKodO" role="jymVt" />
     <node concept="312cEg" id="5pHn3TdKodP" role="jymVt">
       <property role="TrG5h" value="inputField" />
@@ -705,7 +707,7 @@
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int)" resolve="GridLayout" />
                 <node concept="3cmrfG" id="5pHn3TdJqYY" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
+                  <property role="3cmrfH" value="10" />
                 </node>
                 <node concept="3cmrfG" id="5pHn3TdJs$v" role="37wK5m">
                   <property role="3cmrfH" value="2" />
@@ -714,6 +716,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="ENFp$leit9" role="3cqZAp" />
         <node concept="9aQIb" id="5pHn3TdKyAW" role="3cqZAp">
           <node concept="3clFbS" id="5pHn3TdKyAY" role="9aQI4">
             <node concept="3clFbF" id="5pHn3TdKA4G" role="3cqZAp">
@@ -833,6 +836,22 @@
                     <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                     <node concept="Xl_RD" id="5pHn3TdM6i2" role="37wK5m">
                       <property role="Xl_RC" value="Output" />
+                      <node concept="17Uvod" id="ENFp$ldNg8" role="lGtFl">
+                        <property role="2qtEX9" value="value" />
+                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                        <node concept="3zFVjK" id="ENFp$ldNgb" role="3zH0cK">
+                          <node concept="3clFbS" id="ENFp$ldNgc" role="2VODD2">
+                            <node concept="3clFbF" id="ENFp$ldNgi" role="3cqZAp">
+                              <node concept="2OqwBi" id="ENFp$ldNgd" role="3clFbG">
+                                <node concept="3TrcHB" id="ENFp$ldNgg" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                                <node concept="30H73N" id="ENFp$ldNgh" role="2Oq$k0" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
