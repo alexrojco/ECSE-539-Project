@@ -26,6 +26,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOutputField = createDescriptorForOutputField();
   /*package*/ final ConceptDescriptor myConceptPHHP = createDescriptorForPHHP();
   /*package*/ final ConceptDescriptor myConceptTriggerRule = createDescriptorForTriggerRule();
+  /*package*/ final EnumerationDescriptor myEnumerationComparator = new EnumerationDescriptor_Comparator();
   /*package*/ final EnumerationDescriptor myEnumerationSeverityLevel = new EnumerationDescriptor_SeverityLevel();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -77,7 +78,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationSeverityLevel);
+    return Arrays.asList(myEnumerationComparator, myEnumerationSeverityLevel);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -114,17 +115,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForLogEntry() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguage", "LogEntry", 0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad991553dfabL);
     b.class_(false, false, false);
+    // extends: NewLanguage.structure.TriggerRule
+    b.super_(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99155569e4L);
     b.origin("r:66d9b93c-f562-4f88-af54-ce6ee3a9563c(NewLanguage.structure)/771150834209906603");
     b.version(3);
-    b.property("message", 0xab3ad991553e41aL).type(PrimitiveTypeId.STRING).origin("771150834209907738").done();
-    b.property("severity", 0xab3ad9915556f22L).type(MetaIdFactory.dataTypeId(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad991555741dL)).origin("771150834210008866").done();
+    b.property("time", 0xab3ad9915649e8fL).type(PrimitiveTypeId.STRING).origin("771150834211004047").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLogger() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("NewLanguage", "Logger", 0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99155567eeL);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.origin("r:66d9b93c-f562-4f88-af54-ce6ee3a9563c(NewLanguage.structure)/771150834210007022");
     b.version(3);
+    b.aggregate("logs", 0xab3ad99156499d7L).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad991553dfabL).optional(true).ordered(true).multiple(true).origin("771150834211002839").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMeasurement() {
@@ -164,8 +167,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("action", 0xab3ad99153b8fb5L).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad9915390ee8L).optional(true).ordered(true).multiple(true).origin("771150834208313269").done();
     b.aggregate("measurement", 0xab3ad9915402dcbL).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99153fd70fL).optional(true).ordered(true).multiple(true).origin("771150834208615883").done();
+    b.aggregate("trigger", 0xab3ad991567c77aL).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99155569e4L).optional(true).ordered(true).multiple(true).origin("771150834211211130").done();
     b.aggregate("inputField", 0x566d5c3e4db44e6cL).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0x566d5c3e4db445caL).optional(true).ordered(true).multiple(true).origin("6227735282384653932").done();
     b.aggregate("outputField", 0x566d5c3e4db4963aL).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0x566d5c3e4db490c8L).optional(true).ordered(true).multiple(true).origin("6227735282384672314").done();
+    b.aggregate("logger", 0xab3ad991572813eL).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99155567eeL).optional(false).ordered(true).multiple(false).origin("771150834211914046").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTriggerRule() {
@@ -173,6 +178,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:66d9b93c-f562-4f88-af54-ce6ee3a9563c(NewLanguage.structure)/771150834210007524");
     b.version(3);
+    b.property("comparator", 0xab3ad99156b02e3L).type(MetaIdFactory.dataTypeId(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99156af9e9L)).origin("771150834211422947").done();
+    b.property("severity", 0xab3ad99156e24e4L).type(MetaIdFactory.dataTypeId(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad991555741dL)).origin("771150834211628260").done();
+    b.property("amount", 0xab3ad99156e2f38L).type(PrimitiveTypeId.INTEGER).origin("771150834211630904").done();
+    b.associate("measurement", 0xab3ad9915583370L).target(0x16a79f2d7a8d4f36L, 0xae28276960b9e667L, 0xab3ad99153fd70fL).optional(true).origin("771150834210190192").done();
     return b.create();
   }
 }

@@ -23,46 +23,76 @@
       <node id="771150834209962892" at="31,53,32,151" concept="1" />
       <node id="771150834209962892" at="33,7,34,20" concept="5" />
       <node id="771150834210044524" at="36,82,37,47" concept="6" />
-      <node id="771150834209964723" at="37,47,38,31" concept="5" />
-      <node id="771150834209961256" at="42,84,43,119" concept="4" />
-      <node id="771150834209962892" at="43,119,44,59" concept="1" />
-      <node id="771150834209961256" at="44,59,45,22" concept="5" />
-      <node id="771150834209961256" at="49,0,50,0" concept="7" trace="Measurement$IQ" />
-      <node id="771150834209961256" at="53,0,54,0" concept="7" trace="max$QmHx" />
+      <node id="771150834211094302" at="37,47,38,83" concept="5" />
+      <node id="771150834211046866" at="42,58,43,59" concept="9" />
+      <node id="771150834211046866" at="46,109,47,100" concept="4" />
+      <node id="771150834211046866" at="48,53,49,151" concept="1" />
+      <node id="771150834211046866" at="50,7,51,20" concept="5" />
+      <node id="771150834211103914" at="53,82,54,83" concept="5" />
+      <node id="771150834209961256" at="58,84,59,119" concept="4" />
+      <node id="771150834209962892" at="59,119,60,59" concept="1" />
+      <node id="771150834211046866" at="60,59,61,59" concept="1" />
+      <node id="771150834209961256" at="61,59,62,22" concept="5" />
+      <node id="771150834209961256" at="66,0,67,0" concept="7" trace="Measurement$IQ" />
+      <node id="771150834209961256" at="70,0,71,0" concept="7" trace="max$QmHx" />
+      <node id="771150834209961256" at="71,0,72,0" concept="7" trace="min$wfiJ" />
       <node id="771150834209961256" at="20,0,23,0" concept="0" trace="Measurement_Constraints#()V" />
       <node id="771150834209962892" at="25,0,28,0" concept="0" trace="Max_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
       <node id="771150834209962892" at="30,100,33,7" concept="2" />
+      <node id="771150834211046866" at="42,0,45,0" concept="0" trace="Min_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="771150834211046866" at="47,100,50,7" concept="2" />
+      <node id="771150834211046866" at="53,0,56,0" concept="8" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
       <node id="771150834209962892" at="36,0,40,0" concept="8" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
-      <node id="771150834209961256" at="41,0,47,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="771150834209961256" at="57,0,64,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
       <node id="771150834209962892" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="771150834211046866" at="45,0,53,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
       <scope id="771150834209961256" at="20,36,21,35" />
       <scope id="771150834209962892" at="25,58,26,59" />
       <scope id="771150834209962892" at="31,53,32,151" />
-      <scope id="771150834209963601" at="36,82,38,31" />
+      <scope id="771150834211046866" at="42,58,43,59" />
+      <scope id="771150834211046866" at="48,53,49,151" />
+      <scope id="771150834211102648" at="53,82,54,83" />
+      <scope id="771150834209963601" at="36,82,38,83" />
       <scope id="771150834209961256" at="20,0,23,0" />
       <scope id="771150834209962892" at="25,0,28,0">
         <var name="container" id="771150834209962892" />
       </scope>
-      <scope id="771150834209961256" at="42,84,45,22">
-        <var name="properties" id="771150834209961256" />
+      <scope id="771150834211046866" at="42,0,45,0">
+        <var name="container" id="771150834211046866" />
+      </scope>
+      <scope id="771150834211046866" at="53,0,56,0">
+        <var name="node" id="771150834211046866" />
+        <var name="propertyValue" id="771150834211046866" />
       </scope>
       <scope id="771150834209962892" at="36,0,40,0">
         <var name="node" id="771150834209962892" />
         <var name="propertyValue" id="771150834209962892" />
       </scope>
+      <scope id="771150834209961256" at="58,84,62,22">
+        <var name="properties" id="771150834209961256" />
+      </scope>
       <scope id="771150834209962892" at="29,109,34,20">
         <var name="result" id="771150834209962892" />
       </scope>
-      <scope id="771150834209961256" at="41,0,47,0" />
+      <scope id="771150834211046866" at="46,109,51,20">
+        <var name="result" id="771150834211046866" />
+      </scope>
+      <scope id="771150834209961256" at="57,0,64,0" />
       <scope id="771150834209962892" at="28,0,36,0">
         <var name="checkingNodeContext" id="771150834209962892" />
         <var name="node" id="771150834209962892" />
         <var name="propertyValue" id="771150834209962892" />
       </scope>
-      <unit id="771150834209961256" at="48,0,51,0" name="NewLanguage.constraints.Measurement_Constraints$CONCEPTS" />
-      <unit id="771150834209961256" at="52,0,55,0" name="NewLanguage.constraints.Measurement_Constraints$PROPS" />
+      <scope id="771150834211046866" at="45,0,53,0">
+        <var name="checkingNodeContext" id="771150834211046866" />
+        <var name="node" id="771150834211046866" />
+        <var name="propertyValue" id="771150834211046866" />
+      </scope>
+      <unit id="771150834209961256" at="65,0,68,0" name="NewLanguage.constraints.Measurement_Constraints$CONCEPTS" />
+      <unit id="771150834209961256" at="69,0,73,0" name="NewLanguage.constraints.Measurement_Constraints$PROPS" />
+      <unit id="771150834211046866" at="41,0,57,0" name="NewLanguage.constraints.Measurement_Constraints$Min_Property" />
       <unit id="771150834209962892" at="24,0,41,0" name="NewLanguage.constraints.Measurement_Constraints$Max_Property" />
-      <unit id="771150834209961256" at="19,0,56,0" name="NewLanguage.constraints.Measurement_Constraints" />
+      <unit id="771150834209961256" at="19,0,74,0" name="NewLanguage.constraints.Measurement_Constraints" />
     </file>
   </root>
 </debug-info>

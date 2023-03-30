@@ -20,6 +20,8 @@
     <language id="16a79f2d-7a8d-4f36-ae28-276960b9e667" name="NewLanguage">
       <concept id="6227735282384468810" name="NewLanguage.structure.PHHP" flags="ng" index="rR2tO">
         <child id="771150834208313269" name="action" index="vy28G" />
+        <child id="771150834211914046" name="logger" index="vKiMB" />
+        <child id="771150834211211130" name="trigger" index="vP6Fz" />
         <child id="771150834208615883" name="measurement" index="vWS1i" />
       </concept>
       <concept id="771150834208149224" name="NewLanguage.structure.Action" flags="ng" index="vyEdL">
@@ -33,6 +35,13 @@
         <property id="771150834209388496" name="min" index="vY5D9" />
         <property id="771150834209390626" name="max" index="vZUQV" />
       </concept>
+      <concept id="771150834210007524" name="NewLanguage.structure.TriggerRule" flags="ng" index="vTGhX">
+        <property id="771150834211422947" name="comparator" index="vQaXU" />
+        <property id="771150834211630904" name="amount" index="vRoax" />
+        <property id="771150834211628260" name="severity" index="vRo_X" />
+        <reference id="771150834210190192" name="measurement" index="vUTVD" />
+      </concept>
+      <concept id="771150834210007022" name="NewLanguage.structure.Logger" flags="ng" index="vTGDR" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -41,7 +50,13 @@
     </language>
   </registry>
   <node concept="rR2tO" id="5pHn3TdH3o_">
-    <property role="TrG5h" value="xPHHP" />
+    <property role="TrG5h" value="PHHP" />
+    <node concept="vTGhX" id="ENFp$lsyY5" role="vP6Fz">
+      <property role="vQaXU" value="ENFp$lqJU5/above" />
+      <property role="vRoax" value="40" />
+      <property role="vRo_X" value="ENFp$lln$u/critical" />
+      <ref role="vUTVD" node="ENFp$liZdf" resolve="Temp " />
+    </node>
     <node concept="vyEdL" id="ENFp$liY8I" role="vy28G">
       <property role="TrG5h" value="Eat" />
       <node concept="vz4Vq" id="ENFp$liYdF" role="vWW8L">
@@ -72,9 +87,10 @@
     </node>
     <node concept="vz7Em" id="ENFp$liZdf" role="vWS1i">
       <property role="TrG5h" value="Temp " />
-      <property role="vZUQV" value="1" />
-      <property role="vY5D9" value="2" />
+      <property role="vZUQV" value="37" />
+      <property role="vY5D9" value="36" />
     </node>
+    <node concept="vTGDR" id="ENFp$luAhL" role="vKiMB" />
   </node>
 </model>
 

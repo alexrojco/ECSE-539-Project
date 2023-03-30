@@ -18,6 +18,12 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -27,10 +33,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
-      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -44,12 +46,18 @@
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
       </concept>
+      <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -94,11 +102,32 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="ENFp$llcaN" role="3cqZAp">
-            <node concept="3eOSWO" id="ENFp$lljxC" role="3clFbG">
-              <node concept="1Wqviy" id="ENFp$llhS1" role="3uHU7B" />
-              <node concept="3cmrfG" id="ENFp$llvMi" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
+          <node concept="3clFbF" id="ENFp$lpvWu" role="3cqZAp">
+            <node concept="2d3UOw" id="ENFp$lp$Pm" role="3clFbG">
+              <node concept="1Wqviy" id="ENFp$lpvWt" role="3uHU7B" />
+              <node concept="2OqwBi" id="ENFp$lpx4M" role="3uHU7w">
+                <node concept="EsrRn" id="ENFp$lpwzO" role="2Oq$k0" />
+                <node concept="3TrcHB" id="ENFp$lpxvP" role="2OqNvi">
+                  <ref role="3TsBF5" to="4c12:ENFp$liZvg" resolve="min" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="EnEH3" id="ENFp$lpkni" role="1MhHOB">
+      <ref role="EomxK" to="4c12:ENFp$liZvg" resolve="min" />
+      <node concept="QB0g5" id="ENFp$lpxYR" role="QCWH9">
+        <node concept="3clFbS" id="ENFp$lpxYS" role="2VODD2">
+          <node concept="3clFbF" id="ENFp$lpyiE" role="3cqZAp">
+            <node concept="2dkUwp" id="ENFp$lp$KQ" role="3clFbG">
+              <node concept="1Wqviy" id="ENFp$lpyiD" role="3uHU7B" />
+              <node concept="2OqwBi" id="ENFp$lp$og" role="3uHU7w">
+                <node concept="EsrRn" id="ENFp$lpzRj" role="2Oq$k0" />
+                <node concept="3TrcHB" id="ENFp$lp$$F" role="2OqNvi">
+                  <ref role="3TsBF5" to="4c12:ENFp$lj00y" resolve="max" />
+                </node>
               </node>
             </node>
           </node>

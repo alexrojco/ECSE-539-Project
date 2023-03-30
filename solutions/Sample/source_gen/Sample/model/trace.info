@@ -6,91 +6,104 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root nodeRef="r:e719cd52-d3d0-4e45-a9f6-d96478467dfb(Sample.model)/6227735282384647717">
-    <file name="xPHHP.java">
-      <node id="6227735282384647717" at="18,48,19,15" concept="2" />
-      <node id="6227735282384647717" at="23,48,24,15" concept="2" />
-      <node id="6227735282384647717" at="28,49,29,15" concept="2" />
-      <node id="6227735282384647717" at="37,0,38,0" concept="3" trace="rand" />
-      <node id="6227735282384647717" at="38,0,39,0" concept="3" trace="delay" />
-      <node id="6227735282384647717" at="39,0,40,0" concept="3" trace="timer" />
-      <node id="6227735282384647717" at="40,0,41,0" concept="3" trace="counter" />
-      <node id="6227735282384647717" at="41,0,42,0" concept="3" trace="j" />
-      <node id="6227735282384647717" at="46,19,47,21" concept="2" />
-      <node id="6227735282384647717" at="47,21,48,20" concept="2" />
-      <node id="6227735282384647717" at="48,20,49,38" concept="2" />
-      <node id="6227735282384647717" at="49,38,50,33" concept="2" />
-      <node id="6227735282384647717" at="50,33,51,22" concept="2" />
-      <node id="6227735282384647717" at="52,14,53,17" concept="2" />
-      <node id="6227735282384647717" at="53,17,54,12" concept="2" />
-      <node id="6227735282384647717" at="59,18,60,22" concept="2" />
-      <node id="6227735282384647717" at="60,22,61,37" concept="2" />
-      <node id="6227735282384647717" at="61,37,62,0" concept="6" />
-      <node id="6227735282384647717" at="62,0,63,0" concept="6" />
-      <node id="6227735282384647717" at="63,0,64,13" concept="2" />
-      <node id="6227735282384647717" at="64,13,65,51" concept="2" />
-      <node id="6227735282384647717" at="65,51,66,11" concept="2" />
-      <node id="6227735282384647717" at="66,11,67,0" concept="6" />
-      <node id="6227735282384647717" at="67,0,68,34" concept="2" />
-      <node id="6227735282384647717" at="68,34,69,29" concept="2" />
-      <node id="6227735282384647717" at="69,29,70,18" concept="2" />
-      <node id="6227735282384647717" at="70,18,71,0" concept="6" />
-      <node id="6227735282384647717" at="71,0,72,21" concept="2" />
-      <node id="6227735282384647717" at="84,25,85,20" concept="2" />
-      <node id="6227735282384647717" at="52,12,55,7" concept="0" />
-      <node id="6227735282384647717" at="75,24,78,5" concept="8" />
-      <node id="6227735282384647717" at="17,0,21,0" concept="5" trace="insertUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
-      <node id="6227735282384647717" at="22,0,26,0" concept="5" trace="removeUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
-      <node id="6227735282384647717" at="27,0,31,0" concept="5" trace="changedUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
-      <node id="6227735282384647717" at="83,0,87,0" concept="5" trace="run#()V" />
-      <node id="6227735282384647717" at="75,0,80,0" concept="5" trace="update#()V" />
-      <node id="6227735282384647717" at="81,42,87,7" concept="2" />
-      <node id="6227735282384647717" at="81,0,89,0" concept="7" trace="main#([Ljava/lang/String;)V" />
-      <node id="6227735282384647717" at="45,49,55,7" concept="4" />
-      <node id="6227735282384647717" at="44,0,57,0" concept="5" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
-      <node id="6227735282384647717" at="43,0,58,0" concept="3" trace="act" />
-      <node id="6227735282384647717" at="59,0,74,0" concept="1" trace="xPHHP#()V" />
-      <node id="6227735282384647717" at="16,0,32,0" concept="3" trace="listener" />
-      <scope id="6227735282384647717" at="76,9,76,9" />
-      <scope id="6227735282384647717" at="77,39,77,39" />
-      <scope id="6227735282384647717" at="18,48,19,15" />
-      <scope id="6227735282384647717" at="23,48,24,15" />
-      <scope id="6227735282384647717" at="28,49,29,15" />
-      <scope id="6227735282384647717" at="77,5,78,5">
+    <file name="PHHP.java">
+      <node id="6227735282384647717" at="20,48,21,15" concept="2" />
+      <node id="6227735282384647717" at="25,48,26,15" concept="2" />
+      <node id="6227735282384647717" at="30,49,31,15" concept="2" />
+      <node id="771150834210969646" at="37,0,38,0" concept="3" trace="inputField_a" />
+      <node id="771150834210850955" at="39,0,40,0" concept="3" trace="outputField_a" />
+      <node id="6227735282384647717" at="41,0,42,0" concept="3" trace="rand" />
+      <node id="6227735282384647717" at="42,0,43,0" concept="3" trace="delay" />
+      <node id="6227735282384647717" at="43,0,44,0" concept="3" trace="timer" />
+      <node id="6227735282384647717" at="44,0,45,0" concept="3" trace="counter" />
+      <node id="6227735282384647717" at="45,0,46,0" concept="3" trace="j" />
+      <node id="6227735282384647717" at="50,19,51,21" concept="2" />
+      <node id="6227735282384647717" at="51,21,52,20" concept="2" />
+      <node id="6227735282384647717" at="52,20,53,38" concept="2" />
+      <node id="6227735282384647717" at="53,38,54,33" concept="2" />
+      <node id="6227735282384647717" at="54,33,55,22" concept="2" />
+      <node id="6227735282384647717" at="56,14,57,17" concept="2" />
+      <node id="6227735282384647717" at="57,17,58,12" concept="2" />
+      <node id="6227735282384647717" at="63,17,64,21" concept="2" />
+      <node id="6227735282384647717" at="64,21,65,37" concept="2" />
+      <node id="6227735282384647717" at="65,37,66,0" concept="7" />
+      <node id="6227735282384647717" at="66,0,67,61" concept="2" />
+      <node id="6227735282384647717" at="67,61,68,28" concept="2" />
+      <node id="6227735282384647717" at="68,28,69,22" concept="2" />
+      <node id="6227735282384647717" at="69,22,70,32" concept="2" />
+      <node id="6227735282384647717" at="70,32,71,23" concept="2" />
+      <node id="6227735282384647717" at="71,23,72,0" concept="7" />
+      <node id="6227735282384647717" at="72,0,73,13" concept="2" />
+      <node id="6227735282384647717" at="73,13,74,51" concept="2" />
+      <node id="6227735282384647717" at="74,51,75,11" concept="2" />
+      <node id="6227735282384647717" at="75,11,76,0" concept="7" />
+      <node id="6227735282384647717" at="76,0,77,34" concept="2" />
+      <node id="6227735282384647717" at="77,34,78,29" concept="2" />
+      <node id="6227735282384647717" at="78,29,79,18" concept="2" />
+      <node id="6227735282384647717" at="79,18,80,0" concept="7" />
+      <node id="6227735282384647717" at="80,0,81,21" concept="2" />
+      <node id="771150834210969646" at="84,24,85,16" concept="6" />
+      <node id="771150834210969646" at="86,9,87,89" concept="2" />
+      <node id="771150834210850955" at="89,5,90,38" concept="2" />
+      <node id="6227735282384647717" at="96,25,97,19" concept="2" />
+      <node id="6227735282384647717" at="56,12,59,7" concept="0" />
+      <node id="6227735282384647717" at="19,0,23,0" concept="5" trace="insertUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
+      <node id="6227735282384647717" at="24,0,28,0" concept="5" trace="removeUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
+      <node id="6227735282384647717" at="29,0,33,0" concept="5" trace="changedUpdate#(Ljavax/swing/event/DocumentEvent;)V" />
+      <node id="6227735282384647717" at="85,16,89,5" concept="9" />
+      <node id="6227735282384647717" at="95,0,99,0" concept="5" trace="run#()V" />
+      <node id="6227735282384647717" at="93,42,99,7" concept="2" />
+      <node id="6227735282384647717" at="84,0,92,0" concept="5" trace="update#()V" />
+      <node id="6227735282384647717" at="93,0,101,0" concept="8" trace="main#([Ljava/lang/String;)V" />
+      <node id="6227735282384647717" at="49,49,59,7" concept="4" />
+      <node id="6227735282384647717" at="48,0,61,0" concept="5" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <node id="6227735282384647717" at="47,0,62,0" concept="3" trace="act" />
+      <node id="6227735282384647717" at="18,0,34,0" concept="3" trace="listener" />
+      <node id="6227735282384647717" at="63,0,83,0" concept="1" trace="PHHP#()V" />
+      <scope id="6227735282384647717" at="88,39,88,39" />
+      <scope id="6227735282384647717" at="20,48,21,15" />
+      <scope id="6227735282384647717" at="25,48,26,15" />
+      <scope id="6227735282384647717" at="30,49,31,15" />
+      <scope id="6227735282384647717" at="86,9,87,89" />
+      <scope id="6227735282384647717" at="88,5,89,5">
         <var name="e" id="6227735282384647717" />
       </scope>
-      <scope id="6227735282384647717" at="84,25,85,20" />
-      <scope id="6227735282384647717" at="52,14,54,12" />
-      <scope id="6227735282384647717" at="75,24,78,5" />
-      <scope id="6227735282384647717" at="17,0,21,0">
+      <scope id="6227735282384647717" at="96,25,97,19" />
+      <scope id="6227735282384647717" at="56,14,58,12" />
+      <scope id="6227735282384647717" at="19,0,23,0">
         <var name="p1" id="6227735282384647717" />
       </scope>
-      <scope id="6227735282384647717" at="22,0,26,0">
+      <scope id="6227735282384647717" at="24,0,28,0">
         <var name="p1" id="6227735282384647717" />
       </scope>
-      <scope id="6227735282384647717" at="27,0,31,0">
+      <scope id="6227735282384647717" at="29,0,33,0">
         <var name="p1" id="6227735282384647717" />
       </scope>
-      <scope id="6227735282384647717" at="83,0,87,0" />
-      <scope id="6227735282384647717" at="46,19,51,22" />
-      <scope id="6227735282384647717" at="75,0,80,0" />
-      <scope id="6227735282384647717" at="81,42,87,7" />
-      <scope id="6227735282384647717" at="81,0,89,0">
+      <scope id="6227735282384647717" at="95,0,99,0" />
+      <scope id="6227735282384647717" at="50,19,55,22" />
+      <scope id="6227735282384647717" at="84,24,90,38">
+        <var name="i_a" id="771150834210969646" />
+      </scope>
+      <scope id="6227735282384647717" at="93,42,99,7" />
+      <scope id="6227735282384647717" at="84,0,92,0" />
+      <scope id="6227735282384647717" at="93,0,101,0">
         <var name="args" id="6227735282384647717" />
       </scope>
-      <scope id="6227735282384647717" at="45,49,55,7" />
-      <scope id="6227735282384647717" at="44,0,57,0">
+      <scope id="6227735282384647717" at="49,49,59,7" />
+      <scope id="6227735282384647717" at="48,0,61,0">
         <var name="p1" id="6227735282384647717" />
       </scope>
-      <scope id="6227735282384647717" at="59,18,72,21" />
-      <scope id="6227735282384647717" at="59,0,74,0" />
-      <unit id="6227735282384647717" at="82,35,87,5" name="Sample.model.xPHHP$3" />
-      <unit id="6227735282384647717" at="43,39,57,3" name="Sample.model.xPHHP$2" />
-      <unit id="6227735282384647717" at="16,42,31,3" name="Sample.model.xPHHP$1" />
-      <unit id="6227735282384647717" at="15,0,91,0" name="Sample.model.xPHHP" />
+      <scope id="6227735282384647717" at="63,17,81,21" />
+      <scope id="6227735282384647717" at="63,0,83,0" />
+      <unit id="6227735282384647717" at="94,35,99,5" name="Sample.model.PHHP$3" />
+      <unit id="6227735282384647717" at="47,39,61,3" name="Sample.model.PHHP$2" />
+      <unit id="6227735282384647717" at="18,42,33,3" name="Sample.model.PHHP$1" />
+      <unit id="6227735282384647717" at="17,0,103,0" name="Sample.model.PHHP" />
     </file>
   </root>
 </debug-info>

@@ -5,14 +5,16 @@ package Sample.model;
 import javax.swing.JFrame;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.DocumentEvent;
+import javax.swing.JTextField;
 import java.util.random.RandomGenerator;
 import javax.swing.Timer;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.GridLayout;
+import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 
-public class xPHHP extends JFrame {
+public class PHHP extends JFrame {
   private DocumentListener listener = new DocumentListener() {
     @Override
     public void insertUpdate(DocumentEvent p1) {
@@ -32,7 +34,9 @@ public class xPHHP extends JFrame {
 
 
 
+  private JTextField inputField_a = new JTextField();
 
+  private JTextField outputField_a = new JTextField();
 
   private RandomGenerator rand = RandomGenerator.of("Random");
   private int delay = 1000;
@@ -56,10 +60,15 @@ public class xPHHP extends JFrame {
     }
   };
 
-  public xPHHP() {
-    setTitle("xPHHP");
+  public PHHP() {
+    setTitle("PHHP");
     setLayout(new GridLayout(10, 2));
 
+    inputField_a.getDocument().addDocumentListener(listener);
+    add(new JLabel("Temp"));
+    add(inputField_a);
+    add(new JLabel("TempSim "));
+    add(outputField_a);
 
     update();
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -73,16 +82,19 @@ public class xPHHP extends JFrame {
   }
 
   public void update() {
+    int i_a = 0;
     try {
+      i_a = rand.nextInt(2) - rand.nextInt(2) + Integer.parseInt(inputField_a.getText());
     } catch (NumberFormatException e) {
     }
+    outputField_a.setText("" + (i_a));
   }
 
   public static void main(String[] args) {
     SwingUtilities.invokeLater(new Runnable() {
       @Override
       public void run() {
-        new xPHHP();
+        new PHHP();
       }
     });
   }

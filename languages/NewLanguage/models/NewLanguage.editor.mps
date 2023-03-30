@@ -106,6 +106,21 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F2HdR" id="ENFp$lpWfg" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lpWtU" resolve="trigger" />
+        <node concept="l2Vlx" id="ENFp$lpWfk" role="2czzBx" />
+        <node concept="ljvvj" id="ENFp$lpWiD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="ENFp$lpWlD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$lpW1B" role="3EZMnx">
+        <node concept="ljvvj" id="ENFp$lpWbZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F2HdR" id="5pHn3TdH6sr" role="3EZMnx">
         <ref role="1NtTu8" to="4c12:5pHn3TdH4TG" resolve="inputField" />
         <node concept="l2Vlx" id="5pHn3TdH6st" role="2czzBx" />
@@ -123,6 +138,23 @@
         <node concept="l2Vlx" id="5pHn3TdH9OY" role="2czzBx" />
         <node concept="pj6Ft" id="5pHn3TdH9QK" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="ENFp$ludou" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$ludva" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="ljvvj" id="ENFp$ludyQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="ENFp$luAIs" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lsC4Y" resolve="logger" />
+        <node concept="1sVBvm" id="ENFp$luAIu" role="1sWHZn">
+          <node concept="3F0ifn" id="ENFp$luANl" role="2wV5jI">
+            <property role="3F0ifm" value="" />
+          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="5pHn3TdGLTe" role="2iSdaV" />
@@ -262,19 +294,37 @@
       <node concept="l2Vlx" id="ENFp$lgxtG" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="ENFp$lkY52">
-    <ref role="1XX52x" to="4c12:ENFp$lkXYF" resolve="LogEntry" />
-    <node concept="3EZMnI" id="ENFp$ll9Ui" role="2wV5jI">
-      <node concept="3F0ifn" id="ENFp$llanU" role="3EZMnx">
-        <property role="3F0ifm" value="sends" />
+  <node concept="24kQdi" id="ENFp$lqj4k">
+    <ref role="1XX52x" to="4c12:ENFp$llmB$" resolve="TriggerRule" />
+    <node concept="3EZMnI" id="ENFp$lqj5r" role="2wV5jI">
+      <node concept="3F0ifn" id="ENFp$lqja9" role="3EZMnx">
+        <property role="3F0ifm" value="Trigger a" />
       </node>
-      <node concept="3F0A7n" id="ENFp$lla13" role="3EZMnx">
-        <ref role="1NtTu8" to="4c12:ENFp$lkYgq" resolve="message" />
+      <node concept="3F0A7n" id="ENFp$lryOd" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lryj$" resolve="severity" />
       </node>
-      <node concept="3F0ifn" id="ENFp$llaJh" role="3EZMnx">
-        <property role="3F0ifm" value="when" />
+      <node concept="3F0ifn" id="ENFp$lrxMX" role="3EZMnx">
+        <property role="3F0ifm" value="message when" />
       </node>
-      <node concept="l2Vlx" id="ENFp$ll9Ul" role="2iSdaV" />
+      <node concept="1iCGBv" id="ENFp$lqmJn" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lm3dK" resolve="measurement" />
+        <node concept="1sVBvm" id="ENFp$lqmJp" role="1sWHZn">
+          <node concept="3F0A7n" id="ENFp$lqnsa" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ENFp$lqmiV" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F0A7n" id="ENFp$lqKBO" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lqKbz" resolve="comparator" />
+      </node>
+      <node concept="3F0A7n" id="ENFp$lsBAy" role="3EZMnx">
+        <ref role="1NtTu8" to="4c12:ENFp$lryWS" resolve="amount" />
+      </node>
+      <node concept="l2Vlx" id="ENFp$lqj5t" role="2iSdaV" />
     </node>
   </node>
 </model>

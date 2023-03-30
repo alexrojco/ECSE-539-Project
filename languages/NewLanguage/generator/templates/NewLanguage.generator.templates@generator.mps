@@ -81,7 +81,6 @@
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
-      <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -121,6 +120,7 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -1036,44 +1036,57 @@
           <node concept="3clFbS" id="tIN4tLR40y" role="1zxBo7">
             <node concept="3clFbF" id="tIN4tLRcYo" role="3cqZAp">
               <node concept="37vLTI" id="tIN4tLRfcL" role="3clFbG">
-                <node concept="2OqwBi" id="ENFp$l3hdV" role="37vLTx">
-                  <node concept="37vLTw" id="ENFp$l39OQ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="ENFp$l2Pnx" resolve="rand" />
-                  </node>
-                  <node concept="liA8E" id="ENFp$l3iB9" role="2OqNvi">
-                    <ref role="37wK5l" to="h2sj:~RandomGenerator.nextInt(int)" resolve="nextInt" />
-                    <node concept="17qRlL" id="ENFp$l3sf6" role="37wK5m">
-                      <node concept="2YIFZM" id="tIN4tLRjLF" role="3uHU7B">
-                        <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
-                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                        <node concept="2OqwBi" id="tIN4tLRspP" role="37wK5m">
-                          <node concept="37vLTw" id="tIN4tLRq$r" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5pHn3TdKodP" resolve="inputField" />
-                            <node concept="1ZhdrF" id="tIN4tLROwb" role="lGtFl">
-                              <property role="2qtEX8" value="variableDeclaration" />
-                              <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
-                              <node concept="3$xsQk" id="tIN4tLROwc" role="3$ytzL">
-                                <node concept="3clFbS" id="tIN4tLROwd" role="2VODD2">
-                                  <node concept="3clFbF" id="tIN4tLRVLc" role="3cqZAp">
-                                    <node concept="2OqwBi" id="tIN4tLRXeU" role="3clFbG">
-                                      <node concept="1iwH7S" id="tIN4tLRVLb" role="2Oq$k0" />
-                                      <node concept="1iwH70" id="tIN4tLRYSs" role="2OqNvi">
-                                        <ref role="1iwH77" node="5pHn3TdLaUr" resolve="InputeFieldDeclaration" />
-                                        <node concept="30H73N" id="tIN4tLS5yV" role="1iwH7V" />
-                                      </node>
-                                    </node>
+                <node concept="3cpWs3" id="ENFp$lngph" role="37vLTx">
+                  <node concept="2YIFZM" id="ENFp$lmvfL" role="3uHU7w">
+                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String)" resolve="parseInt" />
+                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                    <node concept="2OqwBi" id="ENFp$lmvfM" role="37wK5m">
+                      <node concept="37vLTw" id="ENFp$lmvfN" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5pHn3TdKodP" resolve="inputField" />
+                        <node concept="1ZhdrF" id="ENFp$lmvfO" role="lGtFl">
+                          <property role="2qtEX8" value="variableDeclaration" />
+                          <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                          <node concept="3$xsQk" id="ENFp$lmvfP" role="3$ytzL">
+                            <node concept="3clFbS" id="ENFp$lmvfQ" role="2VODD2">
+                              <node concept="3clFbF" id="ENFp$lmvfR" role="3cqZAp">
+                                <node concept="2OqwBi" id="ENFp$lmvfS" role="3clFbG">
+                                  <node concept="1iwH7S" id="ENFp$lmvfT" role="2Oq$k0" />
+                                  <node concept="1iwH70" id="ENFp$lmvfU" role="2OqNvi">
+                                    <ref role="1iwH77" node="5pHn3TdLaUr" resolve="InputFieldDeclaration" />
+                                    <node concept="30H73N" id="ENFp$lmvfV" role="1iwH7V" />
                                   </node>
                                 </node>
                               </node>
                             </node>
                           </node>
-                          <node concept="liA8E" id="tIN4tLRviT" role="2OqNvi">
-                            <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
-                          </node>
                         </node>
                       </node>
-                      <node concept="3cmrfG" id="ENFp$l3_Ut" role="3uHU7w">
-                        <property role="3cmrfH" value="3" />
+                      <node concept="liA8E" id="ENFp$lmvfW" role="2OqNvi">
+                        <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWsd" id="ENFp$lmIo9" role="3uHU7B">
+                    <node concept="2OqwBi" id="ENFp$l3hdV" role="3uHU7B">
+                      <node concept="37vLTw" id="ENFp$l39OQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="ENFp$l2Pnx" resolve="rand" />
+                      </node>
+                      <node concept="liA8E" id="ENFp$l3iB9" role="2OqNvi">
+                        <ref role="37wK5l" to="h2sj:~RandomGenerator.nextInt(int)" resolve="nextInt" />
+                        <node concept="3cmrfG" id="ENFp$loZXv" role="37wK5m">
+                          <property role="3cmrfH" value="2" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="ENFp$lnhKH" role="3uHU7w">
+                      <node concept="37vLTw" id="ENFp$lnhKI" role="2Oq$k0">
+                        <ref role="3cqZAo" node="ENFp$l2Pnx" resolve="rand" />
+                      </node>
+                      <node concept="liA8E" id="ENFp$lnhKJ" role="2OqNvi">
+                        <ref role="37wK5l" to="h2sj:~RandomGenerator.nextInt(int)" resolve="nextInt" />
+                        <node concept="3cmrfG" id="ENFp$loQK$" role="37wK5m">
+                          <property role="3cmrfH" value="2" />
+                        </node>
                       </node>
                     </node>
                   </node>
