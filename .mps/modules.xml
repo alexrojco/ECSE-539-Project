@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/RMLL/RMLL.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Sample/Sample.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="" />
     </projectModules>
